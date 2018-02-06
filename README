@@ -1,0 +1,8 @@
+libscds (lib simple C data structures)
+by Maxim Atanasoff
+Free for everyone to use, modify and distribute.
+
+A collection of a few data structures contained within headers, that provide type safe, generic, reusable containers for your C programs.
+Each container only needs a single header file -- include only what you need, requiers no linking/compiling.
+The library is currently bare-bones, but I do plan to extend it in the future. Please have a look at `examples.c` to understand how it's used.
+
