@@ -8,6 +8,27 @@
 #include "Queue.h"
 #include "Heap.h"
 
+
+int compare_int(int* a, int* b){
+    if(*a == *b){
+		return 0;
+	}else if(*a < *b){
+		return -1;
+	}else if(*a > *b){
+		return 1;
+	}
+}
+
+int compare_float(float* a, float* b){
+    if(*a == *b){
+		return 0;
+	}else if(*a < *b){
+		return -1;
+	}else if(*a > *b){
+		return 1;
+	}
+}
+
 //Declare datastructures for types you need
 DECLARE_BINARYSEARCHTREE(int)
 DECLARE_BINARYSEARCHTREE(float)
@@ -21,6 +42,7 @@ DECLARE_HEAPMAX(int)
 
 /*NOTE: declaring the containers within a function will only work under gcc on linux, as that is a gnu extension.
 	If you want portability, declare your containers once in a header/source file in global scope*/
+
 
 int main(void){
     int i;

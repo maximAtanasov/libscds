@@ -2,6 +2,8 @@
 Free for everyone to use, modify and distrubite
 */
 
+//You need to provide a compareTo_TYPE function for your datatype
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -83,3 +85,4 @@ Free for everyone to use, modify and distrubite
         }\
     }\
 \
+//
