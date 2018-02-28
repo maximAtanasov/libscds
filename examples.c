@@ -7,6 +7,7 @@
 #include "SinglyLinkedList.h"
 #include "Queue.h"
 #include "Heap.h"
+#include "Vector.h"
 
 
 int compare_int(int* a, int* b){
@@ -39,6 +40,7 @@ DECLARE_DOUBLYLINKEDLIST(double)
 DECLARE_QUEUE(char)
 DECLARE_HEAPMIN(int)
 DECLARE_HEAPMAX(int)
+DECLARE_VECTOR(int)
 
 /*NOTE: declaring the containers within a function will only work under gcc on linux, as that is a gnu extension.
 	If you want portability, declare your containers once in a header/source file in global scope*/
@@ -46,6 +48,14 @@ DECLARE_HEAPMAX(int)
 
 int main(void){
     int i;
+
+	//Vector example
+	Vector_int* vector1 = new_Vector_int(vector1);
+	vectorPushBack_int(vector1, 2);
+	vectorPushBack_int(vector1, 3);
+	vectorPushBack_int(vector1, 4);
+	int vec_int = *vectorAt_int(vector1, 2);
+	destroy_Vector_int(vector1);
 
 	//BinarySearchTree example
     BinarySearchTree_int* tree1 = new_BinarySearchTree_int(tree1);
@@ -59,7 +69,7 @@ int main(void){
     addToTree_int(tree1, d);
     destroy_BinarySearchTree_int(tree1);
 
-	//second tree example 
+	//Second tree example
     BinarySearchTree_float* tree2 = new_BinarySearchTree_float(tree2);
     {
     float aa = 4.5;
@@ -91,7 +101,7 @@ int main(void){
     destroy_BinarySearchTree_int(tree3);
 
 	//Stack example
-	
+
 	Stack_float* stack0 = new_Stack_float(stack0);
     float floatArray[100];
     for(i = 0; i < 100; i++){
@@ -104,8 +114,8 @@ int main(void){
     Stack_char* stack1 = new_Stack_char(stack1);
     stackPush_char(stack1, ch);
     destroy_Stack_char(stack1);
-	
-	
+
+
 	//Doubly Linked List example
     DoublyLinkedList_double* list0 = new_DoublyLinkedList_double(list0);
     {
@@ -115,7 +125,7 @@ int main(void){
     addToDoublyLinkedList_double(list0, test2);
     }
     destroy_DoublyLinkedList_double(list0);
-    
+
 
 	//Queue example
     char test1 = 'g';
