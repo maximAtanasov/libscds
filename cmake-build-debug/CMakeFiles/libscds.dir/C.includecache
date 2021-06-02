@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/vector.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+C:/Users/atanasov/workspace/libscds/example/examples.c
+stdio.h
+-
+int_vector.h
+C:/Users/atanasov/workspace/libscds/example/int_vector.h
+
+C:/Users/atanasov/workspace/libscds/example/int_vector.h
+vector.h
+-
+

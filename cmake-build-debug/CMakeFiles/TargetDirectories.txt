@@ -1,0 +1,3 @@
+C:/Users/atanasov/workspace/libscds/cmake-build-debug/CMakeFiles/libscds.dir
+C:/Users/atanasov/workspace/libscds/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/atanasov/workspace/libscds/cmake-build-debug/CMakeFiles/rebuild_cache.dir
